@@ -20,6 +20,11 @@ import { checkEmailFormat } from "../utils";
  * case: asdasdas@asdasd
  * case: 123345
  * case: test@email.com
+ * case: {a:true}
+ */
+/**
+ * @case test case return true
+ * @case test case return false
  */
 describe("Test checkEmailFormat", () => {
   test("Return false when email is aaa", () => {
@@ -40,3 +45,7 @@ describe("Test checkEmailFormat", () => {
   test("Return false when email is {a: true}", () =>
     expect(checkEmailFormat({ a: true })).toBe(false));
 });
+
+// Test Component
+// JSX
+// input => span show error message
